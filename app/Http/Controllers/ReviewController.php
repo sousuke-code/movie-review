@@ -18,6 +18,7 @@ class ReviewController extends Controller
         'review' => 'required|string',
     ]);
 
+    
     Review::create([
         'user_id'  => Auth::id(),
         'movie_id' => $request->movie_id,

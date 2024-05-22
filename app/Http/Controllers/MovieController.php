@@ -150,7 +150,6 @@ class MovieController extends Controller
     public function myPage(){
         $user = Auth::user();
         $favorites = $user->favorites()->get();
-
         $movies = [];
 
         foreach ($favorites as $favorite){

@@ -25,7 +25,10 @@
               </svg>
             </div>
 
-              <h5 class="mb-2 text-xl font-medium font-semibold">{{ $review->user->name }}</h5>
+            <a href="{{ route('user.show', $review->user->id )}}">
+              <h5 class="mb-2 text-xl font-medium font-semibold hover:opacity-50">{{ $review->user->name }}</h5>
+            </a>
+
           </div>
           
               

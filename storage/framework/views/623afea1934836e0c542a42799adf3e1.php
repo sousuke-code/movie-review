@@ -23,7 +23,10 @@
               </svg>
             </div>
 
-              <h5 class="mb-2 text-xl font-medium font-semibold"><?php echo e($review->user->name); ?></h5>
+            <a href="<?php echo e(route('user.show', $review->user->id )); ?>">
+              <h5 class="mb-2 text-xl font-medium font-semibold hover:opacity-50"><?php echo e($review->user->name); ?></h5>
+            </a>
+
           </div>
           
               

@@ -13,7 +13,7 @@
       <?php if(Route::has('login')): ?>
         <?php if(auth()->guard()->check()): ?>
         <a href="<?php echo e(url('/dashboard')); ?>">
-          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">一覧画面へ</button>
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">始める</button>
         </a>
 
       <?php else: ?>

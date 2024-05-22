@@ -70,4 +70,12 @@ Route::get('/reviews/index', [ReviewController::class, 'index'])->name('reviews.
 
 // Route::get('/reviews/{movie}', [ReviewController::class, 'show'])->name('review.show');
 
+
+Route::get('/users/{id}', [ProfileController::class, 'show'])->name('user.show');
+
+
+
+
+
+
 require __DIR__.'/auth.php';
